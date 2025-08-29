@@ -13,7 +13,7 @@ import { signIn, signOut, useSession } from "next-auth/react";
 const SidebarSheet = () => {
     const {data} = useSession()
     const handleLoginWithGoogleClick = () => signIn("google")
-    const handleLogoutClick = () => signOut("google")
+    const handleLogoutClick = () => signOut()
 
     console.log(data?.user)
 
